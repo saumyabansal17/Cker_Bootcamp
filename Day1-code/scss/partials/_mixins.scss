@@ -1,0 +1,17 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading-1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: $heading-text-color;
+}
+
+@mixin para {
+    font-size: 16px;
+    font-weight: 400;
+    color: $content-text-color;
+}
