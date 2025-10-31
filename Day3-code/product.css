@@ -1,0 +1,10 @@
+.product-card{
+    padding: 8px;
+    margin:4px;
+    display: inline-block;
+    width:20%;
+    height:auto;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    background-color: gray;
+}
