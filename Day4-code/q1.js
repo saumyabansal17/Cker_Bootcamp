@@ -91,16 +91,33 @@ data = [
     },
   },
 ];
-function extract(data) {
-  const {
-    id,
-    title,
-    rating: { rate, count },
-  } = data[0];
-  const data1 = [{ id, title, rate, count }];
-  return data1;
+// function extract(data) {
+//   const {
+//     id,
+//     title,
+//     rating: { rate, count },
+//   } = data[0];
+//   const data1 = [{ id, title, rate, count }];
+//   return data1;
+// }
+// console.log(extract(data));
+function extract(arr,arr1){
+  let ans=arr.map((obj)=>{
+    let newObj={};
+    for(let key of arr1){
+      if (obj.hasOwnProperty(key)) {
+        if (typeof obj[key] === "object" && obj[key] !== null) {
+          newObj = { ...newObj, ...obj[key] };
+        } else {
+          newObj[key] = obj[key];
+        }
+      }
+    }
+    return newObj;
+  });
+  return ans;
 }
-console.log(extract(data));
+console.log(extract(data,["id","title","rating"]));
 
 //q11
 const fun = (name = "abc") => {
