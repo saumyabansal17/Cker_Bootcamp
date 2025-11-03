@@ -19,36 +19,48 @@ console.log("After:", arr2);
 // Q6
 let arr3 = [2, 4, 2, 5, 2];
 console.log("Before:",arr3);
-for (let i = 0; i < arr3.length; i++) {
-  if (arr3[i] === 2) {
-    arr3[i] = 9;
+function replace(arr,ele,newEle){
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === ele) {
+    arr[i] = newEle;
   }
 }
-console.log("After replacing 2 with 9:", arr3);
+return arr;
+}
+
+console.log("After replacing :", replace(arr3,2,9));
 
 // Q7
 let arr4 = [5, 2, 8, 1, 3];
 console.log("Before:",arr4);
-for (let i = 0; i < arr4.length; i++) {
-  for (let j = i + 1; j < arr4.length; j++) {
-    if (arr4[i] > arr4[j]) {
-      let temp = arr4[i];
-      arr4[i] = arr4[j];
-      arr4[j] = temp;
+function sortIncreasing(arr){
+  for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[i] > arr[j]) {
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
     }
   }
 }
-console.log("After sorting (ascending):", arr4);
+return arr;
+}
+
+console.log("After sorting (ascending):", sortIncreasing(arr4));
 
 // Q8
 let arr5 = [1, 2, 3, 4, 5];
 console.log("Before:",arr5);
-for (let i = 0; i < arr5.length / 2; i++) {
-  let temp = arr5[i];
-  arr5[i] = arr5[arr5.length - 1 - i];
-  arr5[arr5.length - 1 - i] = temp;
+function reverseArray(arr){
+for (let i = 0; i < arr.length / 2; i++) {
+  let temp = arr[i];
+  arr[i] = arr[arr.length - 1 - i];
+  arr[arr.length - 1 - i] = temp;
 }
-console.log("After reversing array:", arr5);
+return arr;
+}
+
+console.log("After reversing array:", reverseArray(arr5));
 
 // Q9
 let arr6 = [3, 1, 4, 5, 2];
