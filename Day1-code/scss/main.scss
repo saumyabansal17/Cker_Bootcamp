@@ -110,23 +110,11 @@ body {
     padding: 50px 0px;
 }
 
-.content-section-2{
-    // padding: 52px;
-    // margin-top:42px;
-    // margin-bottom: 48px;
-}
+
 .pixelgrade-container{
     display: flex;
-    // margin: 82px 0px;
     align-items: center;
     justify-content: space-around;
-    // gap:49px;
-}
-
-.pixelgrade-image-container{
-    // margin: 52px 0px;
-    // width: 442 px;
-    // height: 443px;
 }
 
 .pixel-heading{
@@ -134,7 +122,6 @@ body {
     font-weight: 600;
     color:$heading-text-color;
     margin-bottom: 16px;
-    // padding:0px;
 }
 
 .pixel-content{
@@ -171,22 +158,21 @@ body {
 
 .client-image-wrapper{
     display: flex;
+    width:78%;
     align-items: center;
     justify-content: space-around;
     margin-top: 16px;
     margin-bottom: 40px;
+    // gap:136px;
     
 }
 
 .client-image-container{
-    // display: flex;
     margin:0px 144px;
     padding: 25px 0px;
 }
 
 .community-heading {
-    // padding:0px 449px;
-    // text-align: center;
     margin-bottom: 8px;
 }
 
@@ -196,14 +182,9 @@ body {
     justify-content: center;
     align-items: center;
     gap:130px;
-    // flex-wrap: wrap;
-    // margin:0px 144px;
-    // padding: 25px 0px;
 }
 
 .community-image-container{
-    // display: flex;
-    // flex-direction: row;
     gap:8px;
     padding: 24px 16px;
     width: 299px;
@@ -220,6 +201,7 @@ body {
 
 .stats-container {
     display: flex;
+
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -228,11 +210,11 @@ body {
 }
 
 .stat {
+    // position: relative;
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 15px;
-    // gap:72px;
+    margin: 15px 0px;
 }
 
 .icon-img{
@@ -275,23 +257,15 @@ body {
 }
 
 .demo-desc{
-    // display: flex;
     color:$text-color;
     font-size: 64px;
      width: 40%;
-    // align-items: center;
-    // justify-content: center;
-    // font-weight: 600;
-    // margin-top:32px;
 }
 
 .arrow-img{
-    // color: green;
     display: flex;
     align-items: center;
     justify-content: center;
-    // width:16px;
-    // height: 16px;
 }
 
 .demo-btn{
