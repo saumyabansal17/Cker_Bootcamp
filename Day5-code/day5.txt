@@ -1,0 +1,91 @@
+//q1
+ps aux --sort=%mem
+kill 5867
+//another way(q1)
+top 
+SHIFT+M
+kill 5867
+
+//q2
+suser - devops
+sudo usermod -aG sudo devops
+
+//q3
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+sudo systemctl enable ssh
+sudo systemctl start ssh
+ssh shreya-mathur@10.1.209.45
+scp saumya-bansal@10.1.210.8:/home/saumya-bansal/sam /home/shreya-mathur/
+
+//q4
+ps aux | grep java > output1.txt
+
+//q5
+ssh-keygen -t rsa -b 4096 -C "saumya"
+ssh-copy-id shreya-mathur@10.1.209.45
+ssh-copy-id rimjhim-agrawal@10.1.209.37
+
+scp shreya-mathur@10.1.209.45  #(can access without paassword)
+
+//q6
+grep "error" /var/log/syslog > errors_found.txt
+
+//q7
+find /etc -type f -name "*.conf" | sort > conf_list.txt
+
+//q8
+cut -d: -f7 /etc/passwd | uniq | wc -l
+
+//q9
+// CREATING A TEXT FILE
+vim test.txt
+cat test.txt
+Hello
+
+// Modes
+Normal Mode – navigation & commands (default). Press Esc to return.
+Insert Mode – for typing text. Press i.
+Visual Mode – for selecting text. Press v (chars) or V (lines).
+
+// Cursor Movement
+Arrows or h(left) j(down) k(up) l(right)
+Word: w (next word), e (end), b (previous)
+Line: 0 (start), ^ (first non-blank), $ (end)
+
+// Editing Commands
+Insert: i (before), a (after)
+Delete: x (char), dw (word), dd (line)
+Undo: u, Redo: Ctrl + r
+Copy/Paste: yy (copy line), p (paste after), P (paste before)
+
+// Save & Quit
+:w → save
+:q → quit
+:q! → quit without saving
+:wq or ZZ → save and quit
+
+//q10
+sudo passwd devops
+sudo reboot
+
+//q11
+tar -czvf newfold_zipped.tar newFold 
+scp newfold_zipped.tar shreya-mathur/10.1.209.45:/home/shreya-mathur/
+tar -xzvf newfold_zipped.tar
+
+//q12
+sudo apt update
+
+sudo apt install mysql-server -y
+
+sudo apt install docker.io -y
+
+sudo install snapd
+sudo snap install postman
+
+sudo snap install dbeaver-ce
+
+
+
