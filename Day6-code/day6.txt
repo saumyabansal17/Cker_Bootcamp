@@ -1,0 +1,74 @@
+//q1
+ssh-keygen -t ed25519 -C "git-saumya"
+
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub(paste the ouput in github account in new ssh key section)
+
+ssh -T git@github.com(this will show it is connected)
+
+//q2
+Added a new repo at github 
+
+//q3
+git clone git@github.com:saumyabansal17/Cker-git-test.git
+
+//q4
+git add .
+git commit -m "modified text"
+git push origin main
+
+//q5
+git branch f1
+git branch f2
+
+//q6
+(made changes in test from main & then f1)
+git checkout main
+git merge f1
+(Then manually resolved merge conflicts in editor)
+
+
+//q7
+git checkout f1
+touch f1.txt
+echo "This is f1" > f1.txt
+git add .
+git commit -m "added new file f1"
+
+git checkout f2
+touch f2.txt
+echo "This is f2" > f2.txt
+git add .
+git commit -m "added new file f2"
+
+git log --oneline --graph --all(This will show the divergence)
+
+//q8
+git init creates a new empty git repository in your local folder whereas 
+git clone copies an existing remote repository (with all files and history) to your local system.(used to copy paste remote repo)
+
+//q9
+git branch is used to list, create, or delete branche.(don't switch the current branch)
+git branch: gives you current branch
+git branch branch_name: creates a new branch
+git branch -d branch_name: deletes a branch
+
+git checkout is used to switch between branches or restores files.
+git checkout f1 (switch to f1)
+git checkout -b f1 (create and switch to f1)
+git checkout main --test.txt (restore the old test.txt(discard local changes))
+
+//q10
+git fetch downloads changes from remote but doesn’t merge them.
+git pull fetches and automatically merges changes into your current branch.
+
+//q11
+git rebase -i HEAD~<2>
+
+//q12
+git reset: Moves HEAD to a previous commit and removes later commits (changes history,it changes the number of commits).
+git revert: Creates a new commit that undoes the changes (keeps history intact).
+
+//q13
+git branch -d branch_name
+git push origin --delete branch_name
