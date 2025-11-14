@@ -1,0 +1,14 @@
+//q1
+The Java Collections Framework is a set of classes and interfaces that help store and manipulate groups of objects efficiently — such as lists, sets, and maps.
+
+Advantages:
+Reusability: Common data structures (like ArrayList, HashSet) are already implemented.
+Performance: Provides optimized algorithms (sorting, searching, etc.).
+Interoperability: Common interfaces (like List, Set, Map) make code flexible.
+Reduced coding effort: No need to write data structure logic from scratch.
+
+//q2
+Vector is synchronized and slower, used in multithreading.
+ArrayList is faster but not synchronized, good for random access.
+LinkedList is better for frequent insertions and deletions.
+HashSet stores unique elements without order and offers fast lookups.
